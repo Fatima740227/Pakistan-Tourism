@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tourism in Pakistan</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            nav {
+                background-color: darkgreen;/*Dark Green*/
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            }
+            .nav-left {
+                display: flex;
+                align-items: center;
+                gap:15px;
+            }
+.nav-left img{
+height: 50px;
+border-radius: 8px;
+}
+             .nav-left h1{
+                color: whitesmoke;
+                font-size: 24;
+             }
+             ul{
+                list-style: none;
+                display: flex;
+                gap:20px;
+                flex-wrap: wrap;
+             }
+             nav a{
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+                padding: 10px 15px;
+                border-radius: 6px;
+                transition: background-color 0.3s;
+             }
+             nav a:hover {
+                background-color: forestgreen;/*Forest Green*/
+             }
+             @media (max-width 786px) {
+                nav {
+                    align-items: flex-start;
+                    flex-direction: column;
+                }
+             ul{
+                padding-top: 10px;
+                flex-direction: column;
+                width: 100%;
+             }
+            }
+            .mySlides {
+                display: none;
+                height: 600px;
+                width: 100%;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div class="nav-left">
+                <img src="https://res.cloudinary.com/www-travelpakistani-com/image/upload/v1661243930/Faisal_Mosque_travelpakistani.jpg" alt+="Tourism Logo">
+                <h1>Tourism in Pakistan</h1>
+            </div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="culture.html">Culture</a></li>
+                <li><a href="destination.html">Destinations</a></li>
+                <li><a href="adventure.html">Adventure</a></li>
+                <li><a href="food.html">Food</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <!--Slideshow Section-->
+        <section class="slider-container">
+            <div class="mySlides fade">
+                <img class="mySlides" src="images/qbf.jpg" alt="Image 1">
+                <div class="silde-text">Explore the Beauty of Pakistan</div>
+            </div>
+            <img class="mySlides" src="images/bm  new.jpg" alt="Image 2">
+            <img class="mySlides" src="images/Jinnah_Mausoleum.jpg" alt="Image 3">
+            <img class="mySlides" src="images/khunjerab-pass-.jpg" alt="Image 4">
+            <img class="mySlides" src="images/qurttajpg.jpg" alt="Image 5">
+        </section>
+        <script>
+            let myIndex = 0;
+            function carousel() {
+                let slides = document.getElementsByClassName("mySlides");
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > slides.length) { myIndex = 1; }
+                slides[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 3000);
+            }
+            carousel();
+        </script>            
+    </body>
+</html>
