@@ -84,41 +84,98 @@ border-radius: 8px;
             </ul>
         </nav>
         <!--Slideshow Section-->
-        <section class="slider-container">
-            <div class="mySlides fade">
-                <img class="mySlides" src="images/qbf.jpg" alt="Image 1">
-                <div class="silde-text">Explore the Beauty of Pakistan</div>
-            </div>
-            <div class="mySlides fade">
-                <img class="mySlides" src="images/bm  new.jpg.jpg" alt="Image 2">
-                <div class="silde-text">Full of Culture</div>
-            </div>
-            <div class="mySlides fade">
-                <img class="mySlides" src="images/Jinnah_Mausoleum.jpg" alt="Image 3">
-                <div class="silde-text">Breathtaking Landscapes</div>
-            </div>
-            <div class="mySlides fade">
-                <img class="mySlides" src="images/khunjerab-pass-.jpg" alt="Image 4">
-                <div class="silde-text">Experience the magic of Pakistan, a place that will stay with you</div>
-            </div>
-            <div class="mySlides fade">
-                <img class="mySlides" src="images/qurttajpg.jpg" alt="Image 5">
-                <div class="silde-text">Discover the rich history and culture</div>
-            </div>
+        <section>
+        
+            <img class="mySlides"
+                src="images/khunjerab-pass-.jpg"
+                alt="Image 1">
+        
+            <img class="mySlides"
+                src="images/Jinnah_Mausoleum.jpg"
+                alt="Image 2">
+        
+            </section>
+
+        <!-- Welcome Section -->
+        <section style="padding: 40px 20px; background-color: #f4f4f4; text-align: center;">
+            <h2 style="font-size: 32px; color: #006400; margin-bottom: 20px;">Welcome to Pakistan Tourism</h2>
+            <p style="font-size: 18px; max-width: 800px; margin: auto; color: #333;">
+                Discover the rich history, diverse culture, breathtaking landscapes, and vibrant traditions of Pakistan. Whether you're seeking spiritual serenity, thrilling adventures, or cultural immersion—Pakistan has it all.
+            </p>
         </section>
-        <script>
-            let myIndex = 0;
-            function carousel() {
-                let slides = document.getElementsByClassName("mySlides");
-                for (let i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                myIndex++;
-                if (myIndex > slides.length) { myIndex = 1; }
-                slides[myIndex - 1].style.display = "block";
-                setTimeout(carousel, 3000);
-            }
-            carousel();
-        </script>            
+        
+        <!-- Popular Destinations -->
+        <section style="padding: 40px 20px; text-align: center;">
+            <h2 style="font-size: 28px; color: #006400; margin-bottom: 30px;">Popular Destinations</h2>
+            <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+                <div  style="width: 250px; background-color: #e0f2e9; border-radius: 10px; overflow: hidden; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+                    <img src="images/Lake_of_Banjosa.jpg" alt="lake of banjosa"  style="width:100%; height: 150px; object-fit: cover;">
+                    <h3 style="padding: 10px;">Banjosa Lake, Rawalkot</h3>
+                </div>
+                <div
+                    style="width: 250px; background-color: #e0f2e9; border-radius: 10px; overflow: hidden; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+                    <img src="images/fort and shalimar gardens.jpg" alt="Lahore Fort in Shalimar Gardens" style="width:100%; height: 150px; object-fit: cover;">
+                    <h3 style="padding: 10px;">Lahore Fort in Shalimar Gardens, Lahore</h3>
+                </div>
+                <div
+                    style="width: 250px; background-color: #e0f2e9; border-radius: 10px; overflow: hidden; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+                    <img src="images/pak monument.webp" alt="pakistan monument"
+                        style="width:100%; height: 150px; object-fit: cover;">
+                    <h3 style="padding: 10px;">Pakistan Monument,Islamabad</h3>
+                </div>
+            </div>
+            </section>
+            <!-- Culture Section -->
+            <section style="background-color: #f9fff9; padding: 40px 20px;">
+                <h2 style="text-align: center; font-size: 28px; color: #006400; margin-bottom: 30px;">Experience the Culture</h2>
+                <p style="max-width: 800px; margin: auto; font-size: 18px; color: #333; text-align: center;">
+                    Pakistan is home to a rich tapestry of traditions, vibrant festivals, spiritual customs, and a wide array of languages and cuisines. From the colorful Basant celebrations to the rhythmic beats of Bhangra and the grace of  Kathak and classical poetry, every region of Pakistan shares a unique story rooted in its deep cultural
+                    heritage.
+                </p>
+            </section>
+            
+            <!-- Footer Section -->
+            <footer style="background-color: #006400; color: white; padding: 20px 0; text-align: center; margin-top: 40px;">
+                <div style="max-width: 1200px; margin: auto;">
+                    <p style="font-size: 18px; margin-bottom: 10px;">&copy; 2025 Pakistan Tourism. All Rights Reserved.</p>
+                    <p style="font-size: 16px;">
+                        <a href="privacy.html" style="color: #ffffff; text-decoration: none; margin: 0 10px;">Privacy Policy</a> |
+                        <a href="terms.html" style="color: #ffffff; text-decoration: none; margin: 0 10px;">Terms of Use</a> |
+                        <a href="contact.html" style="color: #ffffff; text-decoration: none; margin: 0 10px;">Contact Us</a>
+                    </p>
+                    <p style="margin-top: 10px; font-size: 14px;">Follow us on
+                        <a href="#" style="color: #90ee90; text-decoration: none;">Instagram</a>,
+                        <a href="#" style="color: #90ee90; text-decoration: none;">Facebook</a>,
+                        <a href="#" style="color: #90ee90; text-decoration: none;">Twitter</a>          
+                            </p>
+                </div>
+                </footer>
+            <script>
+
+                    let myIndex = 0;
+
+                    function carousel() {
+
+                        let slides = document.getElementsByClassName("mySlides");
+
+                    for (let i = 0; i < slides.length; i++) {
+
+                        slides[i].style.display = "none";
+
+}
+
+                    myIndex++;
+
+if (myIndex > slides.length) {myIndex = 1; }
+
+                    slides[myIndex - 1].style.display = "block";
+
+                    setTimeout(carousel, 3000);
+
+}
+
+                    carousel();
+
+            </script>         
     </body>
 </html>
