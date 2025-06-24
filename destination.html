@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <title>Destinations in Pakistan</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="https://res.cloudinary.com/www-travelpakistani-com/image/upload/v1661243930/Faisal_Mosque_travelpakistani.jpg"
+                alt+="Tourism Logo">
+            <h1>Tourism in Pakistan</h1>
+        </div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="culture.html">Culture</a></li>
+            <li><a href="destination.html">Destinations</a></li>
+            <li><a href="adventure.html">Adventure</a></li>
+            <li><a href="food.html">Food</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <h2 class="section-title">Explore Top Destinations in Pakistan</h2>
+    <p style="text-align: center; font-style: italic; color: #444; margin-top: 10px; font-size: 18px;">
+        "Not all those who wander are lost — especially in the land where mountains kiss the skies and history whispers
+        through every stone."
+    </p>
+    
+    <div class="card-grid">
+        <div class="card" onclick="openModal('Hunza Valley', 'Located in Gilgit-Baltistan, Hunza Valley is a slice of heaven with snow-capped peaks, serene lakes, and warm hospitality. Ideal for hiking, sightseeing and photography.')">
+            <img src="images/hunza valley.jpg" alt="Hunza">
+            <h3>Hunza Valley</h3>
+        </div>
+    </div>
+    <div class="card-grid">
+        <div class="card"
+            onclick="openModal('Hingol National Park', 'Located in Balochistan, Hingol National Park features deserts, mountains, and the iconic Princess of Hope. It’s home to mud volcanoes, the Hingol River, and diverse wildlife.')">
+            <img src="images/princess-of-hope-hingol.jpg"
+                alt="Hingol National Park">
+                <h3>Hingol National Park</h3>
+        </div>
+    </div>
+    
+    <div class="card-grid">
+        <div class="card"
+            onclick="openModal('Fairy Meadows', 'Nestled at the base of Nanga Parbat, Fairy Meadows is known for its green fields and starry skies. It’s a peaceful spot for trekking, camping, and nature lovers.')">
+            <img src="images/fairy meadows.jpg"
+                alt="Fairy Meadows">
+                <h3>Fairy Meadows</h3>
+        </div>
+    </div>
+    
+    <div class="card-grid">
+        <div class="card"
+            onclick="openModal('Astola Island', 'Astola Island is Pakistan’s only offshore island, known for its crystal-clear water and marine life. It’s perfect for snorkeling, fishing, and peaceful getaways.')">
+            <img src="images/astola.PNG" alt="Astola Island">
+            <h3>Astola Island</h3>
+        </div>
+    </div>
+    
+    <div class="card-grid">
+        <div class="card"
+            onclick="openModal('Deosai Plains', 'Deosai Plains, the world’s second-highest plateau, is covered with wildflowers in summer. Home to the Himalayan brown bear and Sheosar Lake, it’s truly breathtaking.')">
+            <img src="images/deosai.jpg"
+                alt="Deosai Plains">
+                <h3>Deosai Plains</h3>
+        </div>
+    </div>
+    <!-- Modal Popup -->
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+  
+      
+        <!-- Footer Section -->
+        <footer style="background-color: #006400; color: white; padding: 20px 0; text-align: center; margin-top: 40px;">
+            <div style="max-width: 1200px; margin: auto;">
+                <p style="font-size: 18px; margin-bottom: 10px;">&copy; 2025 Pakistan Tourism. All Rights Reserved.</p>
+                <p style="font-size: 16px;">
+                    <a href="privacy.html" style="color: #ffffff; text-decoration: none; margin: 0 10px;">Privacy Policy</a> |
+                    <a href="terms.html" style="color: #ffffff; text-decoration: none; margin: 0 10px;">Terms of Use</a> |
+                    <a href="contact.html" style="color: #ffffff; text-decoration: none; margin: 0 10px;">Contact Us</a>
+                </p>
+                <p style="margin-top: 10px; font-size: 14px;">Follow us on
+                    <a href="#" style="color: #90ee90; text-decoration: none;">Instagram</a>,
+                    <a href="#" style="color: #90ee90; text-decoration: none;">Facebook</a>,
+                    <a href="#" style="color: #90ee90; text-decoration: none;">Twitter</a>
+                </p>
+            </div>
+        </footer>
+        <script>
+            function openModal(title, description) {
+                document.getElementById('modalTitle').innerText = title;
+                document.getElementById('modalDescription').innerText = description;
+                document.getElementById('infoModal').style.display = 'block';
+            }
+
+            function closeModal() {
+                document.getElementById('infoModal').style.display = 'none';
+            }
+
+            // Close modal if clicked outside content
+            window.onclick = function (event) {
+                    let modal = document.getElementById('infoModal');
+                    if (event.target === modal) {
+                        closeModal();
+                    }
+                }
+            </script>
+</body>
+</html>
