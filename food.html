@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>food</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+    
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    
+        nav {
+            background-color: darkgreen;
+            /*Dark Green*/
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+    
+        .nav-left img {
+            height: 50px;
+            border-radius: 8px;
+        }
+    
+        .nav-left h1 {
+            color: whitesmoke;
+            font-size: 24;
+        }
+    
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+    
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 6px;
+            transition: background-color 0.3s;
+        }
+    
+        nav a:hover {
+            background-color: forestgreen;
+            /*Forest Green*/
+        }
+        h2 {
+    color: forestgreen;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+  }
+  
+        @media (max-width 786px) {
+            nav {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+    
+            ul {
+                padding-top: 10px;
+                flex-direction: column;
+                width: 100%;
+            }
+        }
+    
+        .mySlides {
+            display: none;
+            height: 600px;
+            width: 100%;
+    
+        }
+    </style>
+    </head>
+    
+    <body>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="images/lgo for food.jpg"
+                alt+="food logo">
+            <h1>Tourism in Pakistan</h1>
+        </div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="culture.html">Culture</a></li>
+            <li><a href="destination.html">Destinations</a></li>
+            <li><a href="adventure.html">Adventure</a></li>
+            <li><a href="food.html">Food</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <span class="border trans" style="font-size:40px;">
+        <h2>Pakistani Cuisine</h2>
+    </span><br>
+
+    <!-- Information -->
+    <section style="background-color: #f9fff9; padding: 40px 20px;">
+        <h2 style="text-align: center; font-size: 28px; color: #006400; margin-bottom: 30px;">Learn about Pakistani Cuisine</h2>
+        <p style="max-width: 800px; margin: auto; font-size: 18px; color: #333; text-align: center;">
+            Pakistani cuisine is an important part of Pakistani culture, which includes cuisine originating from the diverse regions of Pakistan, as well as from Pakistani people in other parts of the world. Because of the Pakistani diaspora and historical power of the country, Pakistani cuisine has influenced many other cuisines in South Asia and beyond, with modifications made to cater to local palates. Pakistani food staples such as biryani, kebabs, lentils, naan, and spices like garam masala and turmeric are now loved worldwide.
+        </p>
+    </section>
+        <!-- Pakistani Food -->
+        <section style="padding: 40px 20px; text-align: center;">
+            <h2 style="font-size: 28px; color: #006400; margin-bottom: 30px;">Pakistani Food</h2>
+            <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+                <div
+                    style="width: 250px; background-color: #e0f2e9; border-radius: 10px; overflow: hidden; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+                    <img src="images/biryani.jpg" alt="biryani"
+                        style="width:100%; height: 150px; object-fit: cover;">
+                    <h3 style="padding: 10px;">Biryani</h3>
+                </div>
+                <div
+                    style="width: 250px; background-color: #e0f2e9; border-radius: 10px; overflow: hidden; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+                    <img src="images/Nihari.jpg" alt="Nihari"
+                        style="width:100%; height: 150px; object-fit: cover;">
+                    <h3 style="padding: 10px;">Nihari</h3>
+                </div>
+                <div
+                    style="width: 250px; background-color: #e0f2e9; border-radius: 10px; overflow: hidden; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+                    <img src="images/haleem.jpg" alt="Haleem"
+                        style="width:100%; height: 150px; object-fit: cover;">
+                    <h3 style="padding: 10px;">Haleem</h3>
+                </div>
+            </div>
+        </section>
+    
+    <script>
+        // Automatic Slideshow - change image every 3 seconds
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3000);
+        }
+    </script>
+    <br><br><br>
+
+            <!-- Footer Section -->
+            <footer style="background-color: #006400; color: white; padding: 20px 0; text-align: center; margin-top: 40px;">
+                <div style="max-width: 1200px; margin: auto;">
+                    <p style="font-size: 18px; margin-bottom: 10px;">&copy; 2025 Pakistan Tourism. All Rights Reserved.</p>
+                    <p style="font-size: 16px;">
+                        <a href="privacy.html" style="color: #ffffff; text-decoration: none; margin: 0 10px;">Privacy Policy</a> |
+                        <a href="terms.html" style="color: #ffffff; text-decoration: none; margin: 0 10px;">Terms of Use</a> |
+                        <a href="contact.html" style="color: #ffffff; text-decoration: none; margin: 0 10px;">Contact Us</a>
+                    </p>
+                    <p style="margin-top: 10px; font-size: 14px;">Follow us on
+                        <a href="#" style="color: #90ee90; text-decoration: none;">Instagram</a>,
+                        <a href="#" style="color: #90ee90; text-decoration: none;">Facebook</a>,
+                        <a href="#" style="color: #90ee90; text-decoration: none;">Twitter</a>
+                    </p>
+                </div>
+            </footer>
+
+</body>
+
+</html>
