@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <title>Culture</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        nav {
+            background-color: darkgreen;
+            /*Dark Green*/
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .nav-left img {
+            height: 50px;
+            border-radius: 8px;
+        }
+
+        .nav-left h1 {
+            color: whitesmoke;
+            font-size: 24;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 6px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: forestgreen;
+            /*Forest Green*/
+        }
+
+        @media (max-width) {
+            nav {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            ul {
+                padding-top: 10px;
+                flex-direction: column;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="https://res.cloudinary.com/www-travelpakistani-com/image/upload/v1661243930/Faisal_Mosque_travelpakistani.jpg"
+                alt+="Tourism Logo">
+            <h1>Tourism in Pakistan</h1>
+        </div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="culture.html">Culture</a></li>
+            <li><a href="destination.html">Destinations</a></li>
+            <li><a href="adventure.html">Adventure</a></li>
+            <li><a href="food.html">Food</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h2>Culture of Pakistan</h2>
+        <blockquote>"A nation's culture resides in the soul of its people."</blockquote>
+    </header>
+    <!--Traditional Clothing-->
+    <section class="section">
+        <div class="section-text">
+            <h3>Traditional Clothing</h3>
+            <p>Every region in Pakistan has its own traditional dress. Shalwar kameez, adorned with regional embroidery and vibrant colors, reflects centuries of heritage and pride in local identity.</p>
+            <img src="images/pakistani dress.jpg" alt="Traditional Clothing">
+        </div>
+        </section>
+        <!-- Music and Dance -->
+        <section class="section">
+            <div class="section-text">
+                <h3>Music & Dance</h3>
+                <p>From Sufi Qawwali to regional folk music and dances like Luddi and Attan, Pakistan’s music is a rhythm of
+                    tradition, spirituality, and festivity.</p>
+                    <img src="images/music.jpg" alt="Music and Dance">
+            </div>
+        </section>
+        
+        <!-- Festivals -->
+        <section class="section">
+            <div class="section-text">
+                <h3>Festivals</h3>
+                <p>Festivals like Eid, Basant, and Shandur Polo Festival bring people together with joy, color, and unity. They highlight the
+                    warmth, generosity, and communal spirit of Pakistani society.</p>
+                    <img src="images/shandur festivl.jpg" alt="Festivals">
+            </div>
+        </section>
+        <!-- Art and Handicrafts -->
+        <section class="section">
+                        <div class="section-text">
+                            <h3>Art & Handicrafts</h3>
+                            <p>Truck art, pottery, embroidery, and handwoven textiles are just some examples of Pakistan’s vibrant artistic traditions — each telling its own story.</p>
+                                <img src="images/handicrafts.jpg" alt="Art and Handicrafts">
+                        </div>
+        </section>
+            <!-- Footer Section -->
+            <footer style="background-color: #006400; color: white; padding: 20px 0; text-align: center; margin-top: 40px;">
+                <div style="max-width: 1200px; margin: auto;">
+                    <p style="font-size: 18px; margin-bottom: 10px;">&copy; 2025 Pakistan Tourism. All Rights Reserved.</p>
+                    <p style="font-size: 16px;">
+                        <a href="privacy.html" style="color: #ffffff; text-decoration: none; margin: 0 10px;">Privacy Policy</a> |
+                        <a href="terms.html" style="color: #ffffff; text-decoration: none; margin: 0 10px;">Terms of Use</a> |
+                        <a href="contact.html" style="color: #ffffff; text-decoration: none; margin: 0 10px;">Contact Us</a>
+                    </p>
+                    <p style="margin-top: 10px; font-size: 14px;">Follow us on
+                        <a href="#" style="color: #90ee90; text-decoration: none;">Instagram</a>,
+                        <a href="#" style="color: #90ee90; text-decoration: none;">Facebook</a>,
+                        <a href="#" style="color: #90ee90; text-decoration: none;">Twitter</a>
+                    </p>
+                </div>
+            </footer>  
+                </section>
+</body>
+</html>  
+   
