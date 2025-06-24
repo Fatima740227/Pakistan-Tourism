@@ -2,6 +2,78 @@
 <html>
 <head lang="en">
     <title>Destinations in Pakistan</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+    
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    
+        nav {
+            background-color: darkgreen;
+            /*Dark Green*/
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+    
+        .nav-left img {
+            height: 50px;
+            border-radius: 8px;
+        }
+    
+        .nav-left h1 {
+            color: whitesmoke;
+            font-size: 24;
+        }
+    
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+    
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 6px;
+            transition: background-color 0.3s;
+        }
+    
+        nav a:hover {
+            background-color: forestgreen;
+            /*Forest Green*/
+        }
+    
+        @media (max-width 786px) {
+            nav {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+    
+            ul {
+                padding-top: 10px;
+                flex-direction: column;
+                width: 100%;
+            }
+        }
+    
+    </style>
 </head>
 <body>
     <nav>
