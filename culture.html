@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<head lang="en">
+<head>
     <title>Culture</title>
     <style>
         * {
@@ -73,6 +73,78 @@
                 width: 100%;
             }
         }
+        header {
+            background-color: #e6ffe6;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        header h2 {
+            font-size: 32px;
+            color: #006400;
+            margin-bottom: 10px;
+        }
+        header blockquote{
+            font-size: 20px;
+            font-style:italic;
+            color: #555;
+            max-width: 700px;
+            margin:0 auto;
+        }
+        .section{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 20px;
+            gap: 30px;
+        }
+        .section :nth-child(even){
+            background-color:#e0f2e9;
+            flex-direction: row-reverse;
+        }
+        .section :nth-child(odd) {
+            background-color: #fefffe;
+        }
+        section img{
+            width: 100%;
+            max-width: 400px;
+            border-radius: 12px;
+            box box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .section-text {
+        max-width: 600px;
+        }
+        .section h3 {
+            color: #006400;
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+        .section-text p {
+            font-size: 16px;
+            color: #444;
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #006400;
+            color: #fefffe;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 40px;
+        }
+        footer a{
+            color: #b2ffb2;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        @media (max-width 786px) {
+.section {
+flex-direction: column !important;
+text-align: center;
+}
+        }
+    .section-text {
+        padding: 0 10px;
+    }
     </style>
 </head>
 
@@ -98,37 +170,38 @@
     </header>
     <!--Traditional Clothing-->
     <section class="section">
+        <img src="images/pakistani dress.jpg" alt="Traditional Clothing">
         <div class="section-text">
             <h3>Traditional Clothing</h3>
             <p>Every region in Pakistan has its own traditional dress. Shalwar kameez, adorned with regional embroidery and vibrant colors, reflects centuries of heritage and pride in local identity.</p>
-            <img src="images/pakistani dress.jpg" alt="Traditional Clothing">
         </div>
         </section>
         <!-- Music and Dance -->
         <section class="section">
+            <img src="images/music.jpg" alt="Music and Dance">
             <div class="section-text">
                 <h3>Music & Dance</h3>
                 <p>From Sufi Qawwali to regional folk music and dances like Luddi and Attan, Pakistan’s music is a rhythm of
                     tradition, spirituality, and festivity.</p>
-                    <img src="images/music.jpg" alt="Music and Dance">
             </div>
         </section>
         
         <!-- Festivals -->
         <section class="section">
+            <img src="images/shandur festivl.jpg" alt="Festivals">
             <div class="section-text">
                 <h3>Festivals</h3>
                 <p>Festivals like Eid, Basant, and Shandur Polo Festival bring people together with joy, color, and unity. They highlight the
                     warmth, generosity, and communal spirit of Pakistani society.</p>
-                    <img src="images/shandur festivl.jpg" alt="Festivals">
             </div>
         </section>
         <!-- Art and Handicrafts -->
         <section class="section">
+            <img src="images/handicrafts.jpg" alt="Art and Handicrafts">
                         <div class="section-text">
                             <h3>Art & Handicrafts</h3>
                             <p>Truck art, pottery, embroidery, and handwoven textiles are just some examples of Pakistan’s vibrant artistic traditions — each telling its own story.</p>
-                                <img src="images/handicrafts.jpg" alt="Art and Handicrafts">
+
                         </div>
         </section>
             <!-- Footer Section -->
@@ -147,7 +220,7 @@
                     </p>
                 </div>
             </footer>  
-                </section>
+                
 </body>
 </html>  
    
