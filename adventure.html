@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Adventure</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        nav {
+            background-color: darkgreen;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .nav-left img {
+            height: 50px;
+            border-radius: 8px;
+        }
+
+        .nav-left h1 {
+            color: whitesmoke;
+            font-size: 24px;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 6px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: forestgreen;
+        }
+
+        @media (max-width: 786px) {
+            nav {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            ul {
+                padding-top: 10px;
+                flex-direction: column;
+                width: 100%;
+            }
+        }
+
+        header {
+            background-color: #e6ffe6;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h2 {
+            font-size: 32px;
+            color: #006400;
+            margin-bottom: 10px;
+        }
+
+        header blockquote {
+            font-size: 20px;
+            font-style: italic;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 20px;
+            gap: 30px;
+        }
+
+        .section:nth-child(even) {
+            background-color: white;
+        }
+
+        .section:nth-child(odd) {
+            background-color: white;
+        }
+
+        section img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-text {
+    max-width: 600px;
+    padding: 20px;
+    background-color: #e0f7ff; /* light blue */
+    border-radius: 12px;
+}
+        .section h3 {
+            color: #006400;
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+
+        .section-text p {
+            font-size: 16px;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #006400;
+            color: #fefffe;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #b2ffb2;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        @media (max-width: 786px) {
+            .section {
+                flex-direction: column !important;
+                text-align: center;
+            }
+        }
+
+        .section-text {
+            padding: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="https://res.cloudinary.com/www-travelpakistani-com/image/upload/v1661243930/Faisal_Mosque_travelpakistani.jpg"
+                alt="Tourism Logo">
+            <h1>Tourism in Pakistan</h1>
+        </div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="culture.html">Culture</a></li>
+            <li><a href="destination.html">Destinations</a></li>
+            <li><a href="adventure.html">Adventure</a></li>
+            <li><a href="food.html">Food</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h2>Adventure in Pakistan</h2>
+        <blockquote>"Adventure is worthwhile in itself." – Amelia Earhart</blockquote>
+    </header>
+
+    <!-- Trekking -->
+    <section class="section">
+        <img src="images/trekking.jpg" alt="Trekking in Pakistan">
+        <div class="section-text">
+            <h3>Trekking in the North</h3>
+            <p>Paksitan is home to some of the world’s highest and most thrilling trekking routes like K2 Base Camp and Fairy Meadows, offering breathtaking views and unforgettable challenges.</p>
+        </div>
+    </section>
+
+    <!-- Paragliding -->
+    <section class="section">
+        <img src="images/paragliding.webp" alt="Paragliding">
+        <div class="section-text">
+            <h3>Paragliding</h3>
+            <p>Experience the freedom of flying in places like Khanpur Dam and Chitral. Paragliding in Pakistan offers stunning aerial views of valleys, rivers, and mountain ranges.</p>
+        </div>
+    </section>
+
+    <!-- White Water Rafting -->
+    <section class="section">
+        <img src="images/water-rafting.jpg" alt="White Water Rafting">
+        <div class="section-text">
+            <h3>White Water Rafting</h3>
+            <p>In Swat and Gilgit rivers, rafting is an exciting and fast-paced adventure that draws thrill-seekers looking to conquer Pakistan’s mighty waters.</p>
+        </div>
+    </section>
+
+    <!-- Desert Safari -->
+    <section class="section">
+        <img src="images/safari.jpg" alt="Desert Safari">
+        <div class="section-text">
+            <h3>Desert Safari</h3>
+            <p>In the golden sands of Thar and Cholistan, desert safaris offer dune bashing, camel rides, and camping under the stars for an unforgettable desert adventure.</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div style="max-width: 1200px; margin: auto;">
+            <p style="font-size: 18px; margin-bottom: 10px;">&copy; 2025 Pakistan Tourism. All Rights Reserved.</p>
+            <p style="font-size: 16px;">
+                <a href="privacy.html">Privacy Policy</a> |
+                <a href="terms.html">Terms of Use</a> |
+                <a href="contact.html">Contact Us</a>
+            </p>
+            <p style="margin-top: 10px; font-size: 14px;">Follow us on
+                <a href="#">Instagram</a>,
+                <a href="#">Facebook</a>,
+                <a href="#">Twitter</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
